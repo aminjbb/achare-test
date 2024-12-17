@@ -1,0 +1,28 @@
+// ----------------------------------------------------- //
+// Fonts
+// ---------------------------------------------------- //
+
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/vazir-font/Vazir.ttf');
+  font-weight: 300;
+
+}
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/vazir-font/Vazir-Medium.ttf');
+  font-weight: 400;
+
+}
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/vazir-font/Vazir-Bold.ttf');
+  font-weight: 500;
+
+}
+
+html,
+html * {
+  white-space: normal;
+  font-family: 'vazir' !important;
+}

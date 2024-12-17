@@ -1,0 +1,28 @@
+// ----------------------------------------------------- //
+// Typography
+// ---------------------------------------------------- //
+
+@mixin typo($start: 7, $end: 60) {
+  @for $i from $start through $end {
+    $class: "t#{$i}";
+
+    .#{$class} {
+      font-size: #{$i}px !important;
+    }
+  }
+}
+
+@mixin font-variation-wght($start: 100, $end: 800, $step: 100) {
+  @for $i from $start through $end {
+    $class: "w#{$i}";
+
+    .#{$class} {
+      font-weight: #{$i};
+    }
+  }
+}
+
+
+// Usage
+@include typo(10, 50);
+@include font-variation-wght(100, 800, 100);

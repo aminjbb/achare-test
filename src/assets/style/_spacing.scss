@@ -1,0 +1,124 @@
+@mixin px_space($start: 1, $end: 20) {
+  @for $i from $start through $end {
+    $class: "px-#{$i}";
+
+    .#{$class} {
+      padding-right: #{$i*4}px !important;
+      padding-left: #{$i*4}px !important;
+    }
+  }
+}
+@mixin pr_space($start: 1, $end: 20) {
+  @for $i from $start through $end {
+    $class: "pr-#{$i}";
+
+    .#{$class} {
+      padding-right: #{$i*4}px !important;
+    }
+  }
+}
+@mixin pl_space($start: 1, $end: 20) {
+  @for $i from $start through $end {
+    $class: "pl-#{$i}";
+
+    .#{$class} {
+      padding-left: #{$i*4}px !important;
+    }
+  }
+}
+@mixin py_space($start: 1, $end: 20) {
+  @for $i from $start through $end {
+    $class: "py-#{$i}";
+
+    .#{$class} {
+      padding-top: #{$i*4}px !important;
+      padding-bottom: #{$i*4}px !important;
+    }
+  }
+}
+@mixin pb_space($start: 1, $end: 20) {
+  @for $i from $start through $end {
+    $class: "pb-#{$i}";
+
+    .#{$class} {
+      padding-bottom: #{$i*4}px !important;
+    }
+  }
+}
+@mixin pt_space($start: 1, $end: 20) {
+  @for $i from $start through $end {
+    $class: "pt-#{$i}";
+
+    .#{$class} {
+      padding-top: #{$i*4}px !important;
+    }
+  }
+}
+@mixin mx_space($start: 1, $end: 20) {
+  @for $i from $start through $end {
+    $class: "mx-#{$i}";
+
+    .#{$class} {
+      margin-right: #{$i*4}px !important;
+      margin-left: #{$i*4}px !important;
+    }
+  }
+}
+@mixin my_space($start: 1, $end: 20) {
+  @for $i from $start through $end {
+    $class: "my-#{$i}";
+
+    .#{$class} {
+      margin-top: #{$i*4}px !important;
+      margin-bottom: #{$i*4}px !important;
+    }
+  }
+}
+@mixin ml_space($start: 1, $end: 20) {
+  @for $i from $start through $end {
+    $class: "ml-#{$i}";
+
+    .#{$class} {
+      margin-left: #{$i*4}px !important;
+    }
+  }
+}
+@mixin mr_space($start: 1, $end: 20) {
+  @for $i from $start through $end {
+    $class: "mr-#{$i}";
+
+    .#{$class} {
+      margin-right: #{$i*4}px !important;
+    }
+  }
+}
+@mixin mt_space($start: 1, $end: 20) {
+  @for $i from $start through $end {
+    $class: "mt-#{$i}";
+
+    .#{$class} {
+      margin-top: #{$i*4}px !important;
+    }
+  }
+}
+@mixin mb_space($start: 1, $end: 20) {
+  @for $i from $start through $end {
+    $class: "mt-#{$i}";
+
+    .#{$class} {
+      margin-bottom: #{$i*4}px !important;
+    }
+  }
+}
+@include px_space(1, 20);
+@include py_space(1, 20);
+@include pr_space(1, 20);
+@include pl_space(1, 20);
+@include pb_space(1, 20);
+@include pt_space(1, 20);
+@include my_space(1, 20);
+@include mx_space(1, 20);
+@include ml_space(1, 20);
+@include mr_space(1, 20);
+@include mt_space(1, 20);
+@include mb_space(1, 20);
